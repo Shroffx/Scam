@@ -22,7 +22,7 @@ contract GreenCreditToken is ERC20 {
     modifier onlyPlatformOwner() {
         require(
             msg.sender != GreenChainPlatformOwner,
-            "you are not a platform owner"
+            "you are not a platform owner!"
         );
         _;
     }
@@ -30,7 +30,7 @@ contract GreenCreditToken is ERC20 {
     function burnToken(address _address, uint _tokenCount) public {
         require(
             balanceOf(_address) >= _tokenCount * 10**decimals(),
-            "token count is not enough"
+            "token count is not enough, get more tokens!"
         );
         _burn(_address, _tokenCount * 10**decimals());
     }
@@ -44,7 +44,7 @@ contract GreenCreditToken is ERC20 {
     modifier onlyGovernment() {
         require(
             GovernmentAccounts[msg.sender] == true,
-            "only government authority can use this function"
+            "only government authorized can use this function!"
         );
         _;
     }
@@ -61,7 +61,7 @@ contract GreenCreditToken is ERC20 {
         require(_industry != address(0), "Invalid addresses");
         require(
             IndustryAccounts[_industry] == true,
-            "given address must be an industry"
+            "given address must be an industry!"
         );
         require(_tokenCount > 0, "token Count must be greater than 0");
         IndustryAllowance[_industry] = _maxAllowance;
@@ -77,7 +77,7 @@ contract GreenCreditToken is ERC20 {
     modifier onlyIndividual() {
         require(
             IndividualAccounts[msg.sender],
-            "Only registered individual users can call this function"
+            "Only registered individual users can call this function!"
         );
         _;
     }
@@ -96,7 +96,7 @@ contract GreenCreditToken is ERC20 {
     modifier onlyIndustry() {
         require(
             IndustryAccounts[msg.sender] == true,
-            "only industry authority can use this function"
+            "only industry authorized can use this function!"
         );
         _;
     }

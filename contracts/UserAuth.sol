@@ -17,8 +17,9 @@ contract UserAuth {
         string authority
     );
 
-    mapping(address => User) public Users;
+    mapping(address => User) public Users; //call all stored values
 
+    // check for all stored entities
     function checkUserExists(address _userAddress) public view returns (bool) {
         return
             keccak256(abi.encodePacked(Users[_userAddress].privilege)) ==

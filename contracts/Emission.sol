@@ -17,7 +17,6 @@ contract Emission {
 
     function createEmissionData(address _walletID, string memory _carbon, string memory _date) public payable {
         require(msg.value > 0, "Fees should be greater than 0");
-
         dataCount++;
         emmis[dataCount] = Data(_walletID, _carbon, _date, msg.value);
         emit EmissionData(_walletID, _carbon, _date, msg.value);
@@ -25,7 +24,6 @@ contract Emission {
 
     function collectFee(address payable _govId) public {
         require(msg.sender == _govId, "Only authorized entity can collect fees");
-        
         _govId.transfer(address(this).balance);
     }
 

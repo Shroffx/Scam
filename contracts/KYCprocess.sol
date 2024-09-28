@@ -31,7 +31,7 @@ contract KYC {
     modifier onlyPendingVerification(address industry) {
         require(
             certificates[industry].status == VerificationStatus.Pending,
-            "KYC: Certificate not pending verification"
+            "KYC: Certificate pending verification"
         );
         _;
     }
