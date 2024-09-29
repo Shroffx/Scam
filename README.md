@@ -1,5 +1,5 @@
 ## Pre-Requisities-
-nodemon
+vercel
 python version<=3.10
 IPFS server
 node.js
@@ -22,11 +22,8 @@ Step3-
   Setup IPFS server for PC (recommended)
 
 ### Run- 
-**Step1-** 
-```nodemon app.js (nodemon required to be install; refer install guide)```
+```vercel```
 
-**Step2- **
-```
-  cd ml-backend
-  python main.py
-```
+
+## Deployment Link-
+```https://scam-red.vercel.app/```
