@@ -7,7 +7,10 @@ node.js
 ## Instructions
 
 ## Install-
-**Step 1-** ```npm install```
+**Step 1-** 
+```
+npm install
+```
 
 **Step 2- **
 ```
@@ -19,7 +22,8 @@ Step3-
   Setup IPFS server for PC (recommended)
 
 ### Run- 
-**Step1-** ```nodemon app.js (nodemon required to be install; refer install guide)```
+**Step1-** 
+```nodemon app.js (nodemon required to be install; refer install guide)```
 
 **Step2- **
 ```
