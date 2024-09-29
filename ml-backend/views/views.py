@@ -1,6 +1,9 @@
 from flask import jsonify, request
 import numpy as np
 import tensorflow as tf
+from tensorflow.keras.layers import LSTM
+from tensorflow.keras import backend as K
+K.clear_session()
 
 from app import *
 
