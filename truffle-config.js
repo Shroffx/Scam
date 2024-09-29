@@ -3,7 +3,6 @@
  * common settings for different networks and features like migrations,
  * compilation, and testing. Uncomment the ones you need or modify
  * them to suit your project as necessary.
- *
  * More information about configuration can be found at:
  *
  * https://trufflesuite.com/docs/truffle/reference/configuration
