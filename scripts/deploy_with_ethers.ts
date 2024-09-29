@@ -3,7 +3,6 @@
 // And use Right click -> "Run" from context menu of the file to run the script. Shortcut: Ctrl+Shift+S
 
 import { deploy } from './ethers-lib'
-
 (async () => {
   try {
     const result = await deploy('Storage', [])
