@@ -4,7 +4,8 @@
   "description": "Blockchain-Driven Carbon Management integrates blockchain for transparency, automated credit systems, XDC-20 tokens for carbon trading, AI predictions, user-friendly interfaces, incentives, compliance, and public awareness. Revolutionizing emissions control for a sustainable future.",
   "main": "APP.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
