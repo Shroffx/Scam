@@ -235,6 +235,7 @@ section {
 */
 .navbar {
   padding: 0;
+
 }
 
 .navbar ul {
@@ -243,10 +244,12 @@ section {
   display: flex;
   list-style: none;
   align-items: center;
+
 }
 
 .navbar li {
   position: relative;
+
 }
 
 .navbar a,
@@ -261,6 +264,7 @@ section {
   color: #018921;
   white-space: nowrap;
   transition: 0.3s;
+  
 }
 
 .navbar a i,
@@ -268,6 +272,7 @@ section {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  
 }
 
 .navbar a:hover,
@@ -275,6 +280,7 @@ section {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #38c23a;
+  
 }
 
 .navbar .getstarted,
@@ -284,6 +290,7 @@ section {
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
+  
 }
 
 .navbar .getstarted:hover,
@@ -1069,6 +1076,9 @@ section {
   margin-top: 20px;
   position: relative;
 }
+.header{
+  background-color: white;
+}
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
@@ -1127,3 +1137,4 @@ section {
 .img-fluid {
   max-width: 85% !important;
 }
+
